@@ -1,0 +1,810 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 560
+  ClientWidth = 403
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object rcthome: TRectangle
+    Align = Client
+    Fill.Color = claDarkblue
+    Size.Width = 403.000000000000000000
+    Size.Height = 560.000000000000000000
+    Size.PlatformDefault = False
+    object lythome: TLayout
+      Align = Client
+      Size.Width = 403.000000000000000000
+      Size.Height = 560.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object edtcat1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Text = 'Cat 1'
+        TextSettings.FontColor = claWhite
+        Position.X = 8.000000000000000000
+        Position.Y = 28.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Size, Style]
+        OnChange = edtcat1Change
+      end
+      object edtcat2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Text = 'Cat2'
+        TextSettings.FontColor = claWhite
+        Position.X = 86.000000000000000000
+        Position.Y = 28.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Size, Style]
+        OnChange = edtcat2Change
+      end
+      object edtcat3: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Text = 'Cat3'
+        TextSettings.FontColor = claWhite
+        Position.X = 164.000000000000000000
+        Position.Y = 28.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Size, Style]
+        OnChange = edtcat3Change
+      end
+      object edtcat4: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Text = 'Cat4'
+        TextSettings.FontColor = claWhite
+        Position.X = 242.000000000000000000
+        Position.Y = 28.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Size, Style]
+        OnChange = edtcat4Change
+        object FloatAnimation1: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Width'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+      object edtcat5: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        Text = 'Cat5'
+        TextSettings.FontColor = claWhite
+        Position.X = 320.000000000000000000
+        Position.Y = 28.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Size, Style]
+        OnChange = edtcat5Change
+      end
+      object rctcat1_100: TRectangle
+        Position.X = 8.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat1_100: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = '100'
+          TextSettings.Trimming = None
+          OnClick = btncat1_100Click
+        end
+      end
+      object rctcat1_200: TRectangle
+        Position.X = 8.000000000000000000
+        Position.Y = 130.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        object btncat1_200: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = '200'
+          TextSettings.Trimming = None
+          OnClick = btncat1_200Click
+        end
+      end
+      object rctcat1_300: TRectangle
+        Position.X = 8.000000000000000000
+        Position.Y = 186.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btnCAT1_300: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = '300'
+          TextSettings.Trimming = None
+          OnClick = btnCAT1_300Click
+        end
+      end
+      object rctcat1_400: TRectangle
+        Position.X = 8.000000000000000000
+        Position.Y = 244.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        object btncat1_400: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = '400'
+          TextSettings.Trimming = None
+          OnClick = btncat1_400Click
+        end
+      end
+      object rctcat1_500: TRectangle
+        Position.X = 8.000000000000000000
+        Position.Y = 300.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        object btncat1_500: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = '500'
+          TextSettings.Trimming = None
+          OnClick = btncat1_500Click
+        end
+      end
+      object RectAnimation1: TRectAnimation
+        Duration = 0.200000002980232200
+      end
+      object rctcat2_100: TRectangle
+        Position.X = 86.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat2_100: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = '100'
+          TextSettings.Trimming = None
+          OnClick = btncat2_100Click
+        end
+      end
+      object rctcat2_200: TRectangle
+        Position.X = 86.000000000000000000
+        Position.Y = 128.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat2_200: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          Text = '200'
+          TextSettings.Trimming = None
+          OnClick = btncat2_200Click
+        end
+      end
+      object rctcat2_300: TRectangle
+        Position.X = 86.000000000000000000
+        Position.Y = 186.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat2_300: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Text = '300'
+          TextSettings.Trimming = None
+          OnClick = btncat2_300Click
+        end
+      end
+      object rctcat2_400: TRectangle
+        Position.X = 86.000000000000000000
+        Position.Y = 244.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        object btncat2_400: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          Text = '400'
+          TextSettings.Trimming = None
+          OnClick = btncat2_400Click
+        end
+      end
+      object rctcat2_500: TRectangle
+        Position.X = 86.000000000000000000
+        Position.Y = 300.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        object btncat2_500: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = '500'
+          TextSettings.Trimming = None
+          OnClick = btncat2_500Click
+        end
+      end
+      object rctcat3_100: TRectangle
+        Position.X = 164.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat3_100: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          Text = '100'
+          TextSettings.Trimming = None
+          OnClick = btncat3_100Click
+        end
+      end
+      object rctcat3_200: TRectangle
+        Position.X = 164.000000000000000000
+        Position.Y = 128.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat3_200: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Text = '200'
+          TextSettings.Trimming = None
+          OnClick = btncat3_200Click
+        end
+      end
+      object rctcat3_300: TRectangle
+        Position.X = 164.000000000000000000
+        Position.Y = 186.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat3_300: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          Text = '300'
+          TextSettings.Trimming = None
+          OnClick = btncat3_300Click
+        end
+      end
+      object rctcat3_400: TRectangle
+        Position.X = 164.000000000000000000
+        Position.Y = 244.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        object btncat3_400: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 9
+          Text = '400'
+          TextSettings.Trimming = None
+          OnClick = btncat3_400Click
+        end
+      end
+      object rctcat3_500: TRectangle
+        Position.X = 164.000000000000000000
+        Position.Y = 300.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        object btnCat3_500: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 10
+          Text = '500'
+          TextSettings.Trimming = None
+          OnClick = btnCat3_500Click
+        end
+      end
+      object rctcat4_100: TRectangle
+        Position.X = 242.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat4_100: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 11
+          Text = '100'
+          TextSettings.Trimming = None
+          OnClick = btncat4_100Click
+        end
+      end
+      object rctcat4_200: TRectangle
+        Position.X = 242.000000000000000000
+        Position.Y = 130.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        object btncat4_200: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 12
+          Text = '200'
+          TextSettings.Trimming = None
+          OnClick = btncat4_200Click
+        end
+      end
+      object rctcat4_300: TRectangle
+        Position.X = 242.000000000000000000
+        Position.Y = 186.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat4_300: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 13
+          Text = '300'
+          TextSettings.Trimming = None
+          OnClick = btncat4_300Click
+        end
+      end
+      object rctcat4_400: TRectangle
+        Position.X = 242.000000000000000000
+        Position.Y = 244.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat4_400: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 14
+          Text = '400'
+          TextSettings.Trimming = None
+          OnClick = btncat4_400Click
+        end
+      end
+      object rctcat4_500: TRectangle
+        Position.X = 242.000000000000000000
+        Position.Y = 300.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        object btncat4_500: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 15
+          Text = '500'
+          TextSettings.Trimming = None
+          OnClick = btncat4_500Click
+        end
+      end
+      object rctcat5_100: TRectangle
+        Position.X = 320.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat5_100: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 16
+          Text = '100'
+          TextSettings.Trimming = None
+          OnClick = btncat5_100Click
+        end
+      end
+      object rctcat5_200: TRectangle
+        Position.X = 320.000000000000000000
+        Position.Y = 128.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat5_200: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 17
+          Text = '200'
+          TextSettings.Trimming = None
+          OnClick = btncat5_200Click
+        end
+      end
+      object rctcat5_300: TRectangle
+        Position.X = 320.000000000000000000
+        Position.Y = 186.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat5_300: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 18
+          Text = '300'
+          TextSettings.Trimming = None
+          OnClick = btncat5_300Click
+        end
+      end
+      object rctcat5_400: TRectangle
+        Position.X = 320.000000000000000000
+        Position.Y = 244.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btncat5_400: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 19
+          Text = '400'
+          TextSettings.Trimming = None
+          OnClick = btncat5_400Click
+        end
+      end
+      object rctcat5_500: TRectangle
+        Position.X = 320.000000000000000000
+        Position.Y = 300.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        object btncat5_500: TButton
+          Align = Client
+          Size.Width = 70.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 20
+          Text = '500'
+          TextSettings.Trimming = None
+          OnClick = btncat5_500Click
+        end
+      end
+      object rctquiz: TRectangle
+        Align = Center
+        Size.Width = 365.000000000000000000
+        Size.Height = 388.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+        object btndomanda: TButton
+          Align = Top
+          Size.Width = 365.000000000000000000
+          Size.Height = 192.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'clicca per la domanda'
+          TextSettings.Trimming = None
+          OnClick = btndomandaClick
+          object rctexitquiz: TRectangle
+            Fill.Color = claRed
+            Size.Width = 54.000000000000000000
+            Size.Height = 46.000000000000000000
+            Size.PlatformDefault = False
+            object btnexitquiz: TButton
+              Align = Client
+              Size.Width = 54.000000000000000000
+              Size.Height = 46.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Esci'
+              TextSettings.Trimming = None
+              OnClick = btnexitquizClick
+            end
+          end
+        end
+        object btnrisposta: TButton
+          Align = Bottom
+          Position.Y = 200.000000000000000000
+          Size.Width = 365.000000000000000000
+          Size.Height = 188.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'clicca per la risposta'
+          TextSettings.Trimming = None
+          OnClick = btnrispostaClick
+        end
+      end
+      object rctinserimento: TRectangle
+        Align = Center
+        Size.Width = 306.000000000000000000
+        Size.Height = 332.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+        object edtdomanda: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          Position.X = 56.000000000000000000
+          Position.Y = 48.000000000000000000
+          Size.Width = 185.000000000000000000
+          Size.Height = 97.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtrisposta: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 1
+          Position.X = 56.000000000000000000
+          Position.Y = 192.000000000000000000
+          Size.Width = 185.000000000000000000
+          Size.Height = 97.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object lbldomanda: TLabel
+          Position.X = 56.000000000000000000
+          Position.Y = 23.000000000000000000
+          Text = 'Domanda:'
+          TabOrder = 2
+        end
+        object lblrisposta: TLabel
+          Position.X = 56.000000000000000000
+          Position.Y = 167.000000000000000000
+          Text = 'Risposta:'
+          TabOrder = 3
+        end
+        object rctexitinserimento: TRectangle
+          Fill.Color = claRed
+          Size.Width = 43.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          object btnexitinserimento: TButton
+            Align = Client
+            Size.Width = 43.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Esci'
+            TextSettings.Trimming = None
+            OnClick = btnexitinserimentoClick
+          end
+        end
+        object rctsalvainserimento: TRectangle
+          Fill.Color = claGreen
+          Position.X = 256.000000000000000000
+          Size.Width = 49.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          object btnsalvainserimento: TButton
+            Align = Client
+            Size.Width = 49.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Salva'
+            TextSettings.Trimming = None
+            OnClick = btnsalvainserimentoClick
+          end
+        end
+      end
+      object rctpunteggi: TRectangle
+        Fill.Color = claLightgray
+        Position.X = 8.000000000000000000
+        Position.Y = 398.000000000000000000
+        Size.Width = 382.000000000000000000
+        Size.Height = 123.000000000000000000
+        Size.PlatformDefault = False
+        object spnbxplayer1: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          Cursor = crIBeam
+          Increment = 100.000000000000000000
+          Position.X = 78.000000000000000000
+        end
+        object spnbxplayer2: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 1
+          Cursor = crIBeam
+          Increment = 100.000000000000000000
+          Position.X = 78.000000000000000000
+          Position.Y = 30.000000000000000000
+        end
+        object spnbxplayer3: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 2
+          Cursor = crIBeam
+          Increment = 100.000000000000000000
+          Position.X = 78.000000000000000000
+          Position.Y = 60.000000000000000000
+        end
+        object spnbxplayer4: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 3
+          Cursor = crIBeam
+          Increment = 100.000000000000000000
+          Position.X = 78.000000000000000000
+          Position.Y = 90.000000000000000000
+        end
+        object edtplayer1: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 4
+          Text = 'Player1'
+          Position.X = 8.000000000000000000
+          Size.Width = 65.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtplayer2: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 5
+          Text = 'Player2'
+          Position.X = 8.000000000000000000
+          Position.Y = 30.000000000000000000
+          Size.Width = 65.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtplayer3: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 6
+          Text = 'Player3'
+          Position.X = 8.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 65.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtPlayer4: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 7
+          Text = 'Player4'
+          Position.X = 8.000000000000000000
+          Position.Y = 90.000000000000000000
+          Size.Width = 65.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object edtplayer8: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 8
+          Text = 'Player8'
+          Position.X = 194.000000000000000000
+          Position.Y = 92.000000000000000000
+          Size.Width = 65.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+          object spnbxPlayer8: TSpinBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 0
+            Cursor = crIBeam
+            Increment = 100.000000000000000000
+            Position.X = 80.000000000000000000
+            Position.Y = -2.000000000000000000
+            Size.Width = 100.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object edtplayer7: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 9
+          Text = 'Player7'
+          Position.X = 194.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 65.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object spnbxplayer7: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 10
+          Cursor = crIBeam
+          Increment = 100.000000000000000000
+          Position.X = 274.000000000000000000
+          Position.Y = 60.000000000000000000
+        end
+        object edtplayer6: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 11
+          Text = 'Player6'
+          Position.X = 194.000000000000000000
+          Position.Y = 30.000000000000000000
+          Size.Width = 65.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object spnbxplayer6: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 12
+          Cursor = crIBeam
+          Increment = 100.000000000000000000
+          Position.X = 274.000000000000000000
+          Position.Y = 30.000000000000000000
+        end
+        object edtPlayer5: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 13
+          Text = 'Player5'
+          Position.X = 192.000000000000000000
+          Size.Width = 67.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object spnbxplayer5: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 14
+          Cursor = crIBeam
+          Increment = 100.000000000000000000
+          Position.X = 274.000000000000000000
+        end
+      end
+      object RectAnimation2: TRectAnimation
+        Duration = 0.200000002980232200
+      end
+      object rctfasi: TRectangle
+        Position.X = 8.000000000000000000
+        Position.Y = 348.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        object btngioca: TButton
+          Align = Client
+          Size.Width = 81.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 21
+          Text = 'gioca'
+          TextSettings.Trimming = None
+          OnClick = btngiocaClick
+        end
+      end
+    end
+  end
+end

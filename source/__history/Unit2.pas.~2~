@@ -1,0 +1,130 @@
+unit Unit2;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.StdCtrls, FMX.Controls.Presentation, FMX.Edit, FMX.Layouts, FMX.Ani;
+
+type
+  Tgamestate = class
+    state: Integer; //0: inserimento
+  end;
+
+  Tquiz = class
+    domanda: string;
+    risposta: string;
+    procedure inseriscidomandarisposta;
+  end;
+
+  TForm2 = class(TForm)
+    rcthome: TRectangle;
+    edtcat1: TEdit;
+    edtcat2: TEdit;
+    edtcat3: TEdit;
+    edtcat4: TEdit;
+    edtcat5: TEdit;
+    btncat1_100: TButton;
+    btncat1_200: TButton;
+    btnCAT1_300: TButton;
+    btncat1_400: TButton;
+    btncat2_100: TButton;
+    btncat2_200: TButton;
+    btncat2_300: TButton;
+    btncat2_400: TButton;
+    btncat2_500: TButton;
+    btncat1_500: TButton;
+    lythome: TLayout;
+    FloatAnimation1: TFloatAnimation;
+    btncat3_100: TButton;
+    btncat3_200: TButton;
+    btncat3_300: TButton;
+    btncat3_400: TButton;
+    btnCat3_500: TButton;
+    btncat4_100: TButton;
+    btncat4_200: TButton;
+    btncat4_300: TButton;
+    btncat4_400: TButton;
+    btncat4_500: TButton;
+    btncat5_100: TButton;
+    btncat5_200: TButton;
+    btncat5_300: TButton;
+    btncat5_400: TButton;
+    btncat5_500: TButton;
+    btngioca: TButton;
+    btnrisposta: TButton;
+    rctcat1_100: TRectangle;
+    rctcat1_200: TRectangle;
+    rctcat1_300: TRectangle;
+    rctcat1_400: TRectangle;
+    rctcat1_500: TRectangle;
+    RectAnimation1: TRectAnimation;
+    rctcat2_100: TRectangle;
+    rctcat2_200: TRectangle;
+    rctcat2_300: TRectangle;
+    rctcat2_400: TRectangle;
+    Rectangle1: TRectangle;
+    procedure FormCreate(Sender: TObject);
+    procedure btncat1_100Click(Sender: TObject);
+    procedure btngiocaClick(Sender: TObject);
+    procedure btnrispostaClick(Sender: TObject);
+    procedure rctcat1_100Click(Sender: TObject);
+  private
+    { Private declarations }
+    game: Tgamestate;
+    quiz1_100: Tquiz;
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+  domanda : string;
+  risposta : string;
+
+implementation
+
+{$R *.fmx}
+
+procedure TForm2.btncat1_100Click(Sender: TObject);
+begin
+  if game.state = 0 then
+    quiz1_100.inseriscidomandarisposta;
+  if game.state = 1 then
+  begin
+    domanda := quiz1_100.domanda;
+    risposta := quiz1_100.risposta;
+    ShowMessage(domanda);
+  end;
+end;
+
+procedure TForm2.btngiocaClick(Sender: TObject);
+begin
+  game.state := 1;
+end;
+
+procedure TForm2.btnrispostaClick(Sender: TObject);
+begin
+  ShowMessage(risposta);
+end;
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+  Form2.game := Tgamestate.Create;
+  quiz1_100 := Tquiz.Create;
+end;
+
+procedure TForm2.rctcat1_100Click(Sender: TObject);
+begin
+  btncat1_100Click(Sender);
+end;
+
+
+procedure Tquiz.inseriscidomandarisposta;
+begin
+  Domanda := InputBox('Inserisci domanda', 'Domanda:', '');
+  Risposta := InputBox('Inserisci risposta', 'Risposta:', '');
+end;
+
+end.
